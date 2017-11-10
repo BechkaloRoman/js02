@@ -64,16 +64,16 @@ function masFibonacchi(n) {
 }
 
 function recursuvMetod(n) {
- if (n == 0) return 0;
- if (n == 1) return 1;
+ if (n === 0) return 0;
+ if (n ===1) return 1;
  return recursuvMetod(n - 2) + recursuvMetod(n - 1);
 }
 
 function rememberNamb(n) {
  var mas = [0, 1];
- if (n == 0) return mas[0];
+ if (n === 0) return mas[0];
 
- if (n == 1) return mas[1];
+ if (n === 1) return mas[1];
 
  if (!mas[n]) {
   mas[n] = rememberNamb(n - 2) + rememberNamb(n - 1);
