@@ -42,10 +42,10 @@ else {
 
 function twoValue_fibonacchi(n) {
  if (n <= 2) return 1;
- var x = 1;
- var y = 1;
- var z = 0;
- for (var i = 2; i < n; i++) {
+let x = 1;
+ let y = 1;
+ let z = 0;
+ for (let i = 2; i < n; i++) {
   z = x + y;
   x = y;
   y = z;
@@ -70,7 +70,7 @@ function recursuvMetod(n) {
 }
 
 function rememberNamb(n) {
- var mas = [0, 1];
+ let mas = [0, 1];
  if (n === 0) return mas[0];
 
  if (n === 1) return mas[1];
